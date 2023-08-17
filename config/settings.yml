@@ -1,0 +1,5 @@
+enabled_locales:
+  - :en
+  - :vn
+client:
+  host: "localhost:3000"
