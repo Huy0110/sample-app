@@ -3,3 +3,14 @@ enabled_locales:
   - :vn
 client:
   host: "localhost:3000"
+validate:
+  email:
+    length:
+      max: 255
+  name:
+    length:
+      max: 50
+  password:
+    length:
+      min: 6
+  VALID_EMAIL_REGEX: "/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i"
