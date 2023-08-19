@@ -39,3 +39,5 @@ en:
   error:
    anounce: "The form cotains"
   sign_up: "Create my account"
+  remember_me: "Rememeber me on this computer"
+  invalid_email_password_combination: "Invalid email/password"
