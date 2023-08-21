@@ -1,0 +1,12 @@
+<footer class="footer">
+  <small>
+    <%= raw t ".description" %>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("static_pages.about.title"), about_path %></li>
+      <li><%= link_to t("static_pages.contact.title"), contact_path %></li>
+      <li><a href="https://news.railstutorial.org/"><%= t(".new") %></a></li>
+    </ul>
+  </nav>
+</footer>
