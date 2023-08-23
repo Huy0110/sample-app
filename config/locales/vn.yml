@@ -23,6 +23,14 @@ vn:
   header:
    title: "Ruby on Rails Tutorial Sample App"
    signIn: "Log in"
+   users:
+    title: "Người dùng"
+   account:
+    title: "Tài khoản"
+    drop_down:
+      profile: "Cá nhân"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
    appName: "Sample App"
   footer:
    description: The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> by <a href="https://www.michaelhartl.com/">Michael Hartl</a>

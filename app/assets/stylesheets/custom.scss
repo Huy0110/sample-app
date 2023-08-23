@@ -96,8 +96,8 @@ footer {
   margin-top: 45px;
 }
 
-
 /* sidebar */
+
 aside {
   section.user_info {
     margin-top: 20px;
@@ -134,12 +134,13 @@ aside {
 }
 
 @mixin box_sizing {
-  -moz-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing:         border-box;
 }
 
 /* forms */
+
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -164,4 +165,12 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+<<<<<<< HEAD
+=======
+}
+}
+
+.dropdown-menu.active {
+  display: block;
+>>>>>>> Finish chapter 8
 }
