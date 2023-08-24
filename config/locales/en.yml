@@ -23,6 +23,14 @@ en:
   header:
    title: "Ruby on Rails Tutorial Sample App"
    signIn: "Log in"
+   users:
+    title: "Users"
+   account:
+    title: "Account"
+    drop_down:
+     profile: "Profile"
+     settings: "Settings"
+     logout: "Log out"
   footer:
    description: The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> by <a href="https://www.michaelhartl.com/">Michael Hartl</a>
    new: "News"
