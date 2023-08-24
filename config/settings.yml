@@ -4,13 +4,8 @@ enabled_locales:
 client:
   host: "localhost:3000"
 validate:
-  email:
-    length:
-      max: 255
-  name:
-    length:
-      max: 50
-  password:
-    length:
-      min: 6
-  VALID_EMAIL_REGEX: "/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i"
+  digits:
+    length_255: 255
+    length_50: 50
+    length_6: 6
+  email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

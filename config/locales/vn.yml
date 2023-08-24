@@ -14,6 +14,11 @@ vn:
    description: Đây là trang chủ của dự án mẫu sử dụng <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>.
    sign_up: "Đăng ký ngay"
    label: "Home"
+ users:
+  new:
+   label: "Dang ky"
+  not_found: "Khong tim thay user"
+  welcome: "Chao mung den app"
  layouts:
   header:
    title: "Ruby on Rails Tutorial Sample App"
@@ -21,3 +26,6 @@ vn:
    appName: "Sample App"
   footer:
    description: The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> by <a href="https://www.michaelhartl.com/">Michael Hartl</a>
+  error:
+   anounce: "Form chua"
+  sign_up: "Tao tai khoan cua toi"

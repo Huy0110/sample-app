@@ -17,6 +17,8 @@ en:
  users:
   new:
    label: "Sign up"
+  not_found: "User not found"
+  welcome: "Welcome to the Sample App!"
  layouts:
   header:
    title: "Ruby on Rails Tutorial Sample App"
@@ -26,3 +28,6 @@ en:
    new: "News"
   application:
    title: "Ruby on Rails Tutorial Sample App"
+  error:
+   anounce: "The form cotains"
+  sign_up: "Create my account"
