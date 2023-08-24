@@ -37,3 +37,5 @@ vn:
   error:
    anounce: "Form chua"
   sign_up: "Tao tai khoan cua toi"
+  remember_me: "Ghi nho dang nhap"
+  invalid_email_password_combination: "Email/password khong hop le"
