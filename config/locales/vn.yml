@@ -39,3 +39,7 @@ vn:
   sign_up: "Tao tai khoan cua toi"
   remember_me: "Ghi nho dang nhap"
   invalid_email_password_combination: "Email/password khong hop le"
+  all_user: "Tat ca nguoi dung"
+  update_profile: "Cap nhat ho so cua ban"
+  change: "Thay doi"
+  all_users: "Tat ca nguoi dung"
