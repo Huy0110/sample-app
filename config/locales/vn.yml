@@ -19,6 +19,10 @@ vn:
    label: "Dang ky"
   not_found: "Khong tim thay user"
   welcome: "Chao mung den app"
+  activate: "Hay kiem tra email cua ban de kich hoat tai khoan."
+  activate_email: "Chao mung den Sample App! Nhan link sau de kich hoat tai khoan:"
+  avtivate_email_topic: "Sample App"
+  activate_email_greet: "Xin chao"
  layouts:
   header:
    title: "Ruby on Rails Tutorial Sample App"
@@ -43,3 +47,6 @@ vn:
   update_profile: "Cap nhat ho so cua ban"
   change: "Thay doi"
   all_users: "Tat ca nguoi dung"
+  account_activation:
+   success: "Tai khoan da duoc kich hoat!"
+   invalid: "Link kich hoat khong hop le"
