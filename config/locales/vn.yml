@@ -50,3 +50,21 @@ vn:
   account_activation:
    success: "Tai khoan da duoc kich hoat!"
    invalid: "Link kich hoat khong hop le"
+  account_activation:
+   success: "Tai khoan da duoc kich hoat!"
+   invalid: "Link kich hoat khong hop le"
+  password_reset:
+   success: "Mat khau da duoc reset"
+   expired: "Mat khau qua han"
+   instructions: "Email duoc gui voi huong dan doi mat khau"
+   not_found: "Khong tim thay email"
+   forgot: "Quen mat khau"
+   topic: "Reset Mat khau"
+   subject: "De reset mat khau, hay click vao link sau: "
+   warn: "Link nay se co han trong 2 tieng nua"
+   note: "Neu ban khong yeu cau, hay bo qua"
+  update:
+   edit: "Sua nguoi dung"
+   update: "Cap nhat"
+ flash_get_user_danger: "Khong tim thay user"
+ flash_valid_user_danger: "User khong hop le"
