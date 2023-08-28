@@ -1,0 +1,6 @@
+---
+translations:
+  - file: "app/javascript/locales/en.js"
+    only: "en.*"
+  - file: "app/javascript/locales/vi.js"
+    only: "vi.*"

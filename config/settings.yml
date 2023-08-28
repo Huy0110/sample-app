@@ -11,3 +11,6 @@ validate:
     length_30: 30
   email_regex:  !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 expired_2: 2
+micropost:
+  resize_to_limit: [500, 500]
+  image_type: ["image/jpeg", "image/gif", "image/png"]

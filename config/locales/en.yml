@@ -17,12 +17,18 @@ en:
  users:
   new:
    label: "Sign up"
+   error: "Error"
+  edit:
+   success: "Update success"
+   error: "Update failed"
+   delete: "Delete success"
   not_found: "User not found"
   welcome: "Welcome to the Sample App!"
   activate: "Please check your email to activate your account."
   activate_email: "Welcome to the Sample App! Click on the link below to activate your account:"
   avtivate_email_topic: "Sample App"
   activate_email_greet: "Hi"
+  required_login: "You need to login"
  layouts:
   header:
    title: "Ruby on Rails Tutorial Sample App"
@@ -69,3 +75,36 @@ en:
   update: "Update"
  flash_get_user_danger: "Can not find user"
  flash_valid_user_danger: "User is not valid"
+ update:
+  edit: "Edit user"
+  update: "Update"
+ email_not_activated: "Account not activated. Check your email for the activation link"
+ shared:
+  micropost_form:
+  place_holder: "Compose new micropost..."
+  submit: "Post"
+  microposts:
+  title: "Microposts"
+  ago: "ago."
+  created: "Micropost created!"
+  destroy_success: "Micropost deleted"
+  destroy_fail: "Failed to delete Micropost."
+  micropost_not_found: "Micropost not found"
+  invalid_format: "must be a valid image format"
+  less_5MB: "should be less than 5MB"
+  over_image_size: "Maximum file size is 5MB. Please choose a smaller file."
+  micropost:
+   delete: "Delete"
+   confirm: "You sure?"
+ models:
+  micropost:
+  validate_type: "must be a valid image format"
+ index:
+  error: "Load failed"
+ new: "New"
+ microposts:
+  ago: "micropost ago"
+ delete: "Delere"
+ confirm: "Confirm"
+ log_in: "Log in"
+ sign_up_now: "Sign up now"

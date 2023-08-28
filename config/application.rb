@@ -24,5 +24,6 @@ module RailsTutorial
     config.i18n.default_locale = :en
 
     config.time_zone = Settings.time_zone
+    # config.active_storage.variant_processor = :mini_magick
   end
 end
