@@ -41,3 +41,7 @@ en:
   sign_up: "Create my account"
   remember_me: "Rememeber me on this computer"
   invalid_email_password_combination: "Invalid email/password"
+  all_user: "All Users"
+  update_profile: "Update your profile"
+  change: "Change"
+  all_users: "All users"

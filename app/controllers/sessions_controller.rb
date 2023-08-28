@@ -1,16 +1,12 @@
 class SessionsController < ApplicationController
+  before_action :find_user_base_session, only: :create
+
   def new; end
 
   def create
-    user = User.find_by email: params.dig(:session, :email)&.downcase
-    if user&.authenticate(params[:session][:password])
-      # Log the user in and redirect to the user's show page
-      reset_session
-      params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-      login user
-      redirect_to user
+    if @user&.authenticate(params[:session][:password])
+      handle_auth
     else
-      # Create an error message
       flash.now[:danger] = t("invalid_email_password_combination")
       render :new, status: :unprocessable_entity
     end
@@ -19,5 +15,24 @@ class SessionsController < ApplicationController
   def destroy
     logout if logged_in?
     redirect_to root_url, status: :see_other
+  end
+
+  private
+
+  def find_user_base_session
+    @user = User.find_by email: params.dig(:session, :email)&.downcase
+
+    return if @user.nil?
+
+    flash[:danger] = I18n.t "."
+    redirect_to action: :new
+  end
+
+  def handle_auth
+    forwarding_url = session[:forwarding_url]
+    reset_session
+    params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
+    login @user
+    redirect_to forwarding_url || @user
   end
 end

@@ -13,14 +13,14 @@
         <li><%= link_to t("static_pages.home.title"), root_path %></li>
         <li><%= link_to t("static_pages.help.title"), help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to t("layouts.header.users.title"), "#" %></li>
+          <li><%= link_to t("layouts.header.users.title"), users_path %></li>
           <li class="dropdown">
             <a href="#" id="account" class="dropdown-toggle">
               <%= t t("layouts.header.account.title")%> <b class="caret"></b>
             </a>
             <ul id="dropdown-menu" class="dropdown-menu">
               <li><%= link_to t("layouts.header.account.drop_down.profile"), current_user %></li>
-              <li><%= link_to t("layouts.header.account.drop_down.settings"), "#" %></li>
+              <li><%= link_to t("layouts.header.account.drop_down.settings"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to t("layouts.header.account.drop_down.logout"), logout_path,
