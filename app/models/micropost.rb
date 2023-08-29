@@ -8,7 +8,8 @@ class Micropost < ApplicationRecord
                        resize_to_limit: Settings.micropost.resize_to_limit
   end
 
-  scope :ordered_by_created_at, ->{order(created_at: :desc)}
+  scope :newest, ->{order(created_at: :desc)}
+  scope :by_user_ids, ->(user_ids){where user_id: user_ids}
   validates :content, presence: true, length: {maximum: Settings.length_255}
   validates :image,
             content_type: {in: Settings.micropost.image_type,

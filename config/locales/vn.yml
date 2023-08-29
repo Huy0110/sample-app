@@ -29,6 +29,15 @@ vn:
   avtivate_email_topic: "Sample App"
   activate_email_greet: "Xin chao"
   required_login: "Ban can phai login"
+  following: "Dang theo doi"
+  followers: "Nguoi theo doi"
+  unfollow:
+   unfollow: "Bo theo deo"
+  follow:
+   follow: "Theo doi"
+  show_follow:
+   view_profile: "Xem thong tin ca nhan"
+   micropost: "Bai dang"
  layouts:
   header:
    title: "Ruby on Rails Tutorial Sample App"
@@ -103,3 +112,12 @@ vn:
  confirm: "Xac nhan"
  log_in: "Dang nhap"
  sign_up_now: "Dang ky bay gio"
+ relationships:
+  create:
+   success_follow: "Theo dõi thành công"
+  destroy:
+   success_unfollow: "Bỏ theo dõi thành công"
+ following:
+  following: "Đang theo dõi"
+ followers:
+  followers: "Người theo dõi (tôi)"
