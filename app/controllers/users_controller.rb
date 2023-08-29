@@ -17,10 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      reset_session
-      login @user
-      flash[:success] = t("users.new.success")
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "users.activate"
+      redirect_to login_url
     else
       flash.now[:danger] = t("users.new.error")
       render :new, status: :unprocessable_entity

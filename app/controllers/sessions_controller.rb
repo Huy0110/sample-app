@@ -5,7 +5,13 @@ class SessionsController < ApplicationController
 
   def create
     if @user&.authenticate(params[:session][:password])
-      handle_auth
+      if user.activated?
+        handle_auth
+      else
+        message = t "email_not_activated"
+        flash[:warning] = message
+        redirect_to root_url
+      end
     else
       flash.now[:danger] = t("invalid_email_password_combination")
       render :new, status: :unprocessable_entity
@@ -21,10 +27,9 @@ class SessionsController < ApplicationController
 
   def find_user_base_session
     @user = User.find_by email: params.dig(:session, :email)&.downcase
+    return if @user
 
-    return if @user.nil?
-
-    flash[:danger] = I18n.t "."
+    flash[:danger] = I18n.t ".error"
     redirect_to action: :new
   end
 
