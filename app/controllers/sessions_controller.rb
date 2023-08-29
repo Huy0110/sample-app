@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
 
   def create
     if @user&.authenticate(params[:session][:password])
-      if user.activated?
+      if @user.activated?
         handle_auth
       else
         message = t "email_not_activated"

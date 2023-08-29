@@ -17,12 +17,18 @@ vn:
  users:
   new:
    label: "Dang ky"
+   error: "Loi dang ky"
+  edit:
+   success: "Update thanh cong"
+   error: "Update that bai"
+   delete: "Xoa thanh cong"
   not_found: "Khong tim thay user"
   welcome: "Chao mung den app"
   activate: "Hay kiem tra email cua ban de kich hoat tai khoan."
   activate_email: "Chao mung den Sample App! Nhan link sau de kich hoat tai khoan:"
   avtivate_email_topic: "Sample App"
   activate_email_greet: "Xin chao"
+  required_login: "Ban can phai login"
  layouts:
   header:
    title: "Ruby on Rails Tutorial Sample App"
@@ -50,9 +56,6 @@ vn:
   account_activation:
    success: "Tai khoan da duoc kich hoat!"
    invalid: "Link kich hoat khong hop le"
-  account_activation:
-   success: "Tai khoan da duoc kich hoat!"
-   invalid: "Link kich hoat khong hop le"
   password_reset:
    success: "Mat khau da duoc reset"
    expired: "Mat khau qua han"
@@ -68,3 +71,35 @@ vn:
    update: "Cap nhat"
  flash_get_user_danger: "Khong tim thay user"
  flash_valid_user_danger: "User khong hop le"
+ update:
+  edit: "Sua nguoi dung"
+  update: "Cap nhat"
+ shared:
+  micropost_form:
+   place_holder: "Viết 1 bài viết mới..."
+   submit: "Đăng bài"
+ microposts:
+  title: "Bài đăng"
+  ago: "trước."
+  created: "Đã tạo bài đăng!"
+  destroy_success: "Bài đăng đã được xóa!"
+  destroy_fail: "Gặp lỗi khi xóa bài đăng"
+  invalid_format: "phải là định dạng hình ảnh hợp lệ"
+  micropost_not_found: "Không tìm thấy bài đăng"
+  less_5MB: "phải nhỏ hơn 5 MB"
+  over_image_size: "Kích thước tệp tối đa là 5 MB. Vui lòng chọn một tập tin nhỏ hơn."
+  micropost:
+   delete: "Xóa"
+   confirm: "Xác nhận"
+ models:
+  micropost:
+  validate_type: "hình ảnh phải có định dạng hợp lệ"
+ index:
+  error: "Load failed"
+ new: "Tao moi"
+ microposts:
+  ago: "micropost ago"
+ delete: "Xoa"
+ confirm: "Xac nhan"
+ log_in: "Dang nhap"
+ sign_up_now: "Dang ky bay gio"
